@@ -1,0 +1,24 @@
+<?php
+    session_start();
+    include_once(root() . 'assets/config/dbconnect.php');
+
+	$session_check = $_SESSION['login_user'];
+
+	
+	$sql = "SELECT username, sessionid, accessLevel FROM users WHERE username = '$session_check'";
+	
+	$result = mysqli_query($db,$sql)
+     or die("DB Error: ".mysqli_error($db));
+	 
+	$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+	$login_session = $row['username'];
+	
+	$level = $row['accessLevel'];
+
+
+   
+	/*if(!isset($_SESSION['login_user'])){
+		header("location:login.php");
+	}*/
+	
