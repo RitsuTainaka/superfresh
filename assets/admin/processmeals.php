@@ -8,13 +8,14 @@
 
 include_once($_SERVER['DOCUMENT_ROOT'] . '/dwda1/assets/include/core.php');
 $db = new db();
-if(checkIfExistsInDB($_POST['newMealName'],'meals', 'meal_name'))
+if(checkIfExistsInDB($_POST['newMealName'],'meals', 'meal_name') && !isset($_GET['u']))
 {
     popup("Name exists, please choose another name", "assets/admin/addrecipe.php");
 }
-else if(isset($_POST['newMealName']))
+else if(isset($_POST['newMealName']) && !isset($_GET['u']))
 {
-    $newMealName = mysqli_real_escape_string(db::$mysqli,$_POST['newMealName']);
+    echo "insert works";
+  /*  $newMealName = mysqli_real_escape_string(db::$mysqli,$_POST['newMealName']);
     $newMealImage = mysqli_real_escape_string(db::$mysqli,$_POST['newMealImage']);
     $newMealIngredients = mysqli_real_escape_string(db::$mysqli,$_POST['newMealIngredients']);
     $newMealMethod = mysqli_real_escape_string(db::$mysqli,$_POST['newMealMethod']);
@@ -51,10 +52,15 @@ else if(isset($_POST['newMealName']))
     if($result)
     {
         popup("Recipe Added!, returning to all recipes","assets/admin/editmealsitems.php");
-    }
+    }*/
 }
-else if (isset($_POST['mNameToDelete']))
+else if (isset($_POST['mNameToDelete']) && isset($_GET['u']))
 {
-    echo 'works';
+    echo 'delete works';
+}
+
+else if (!isset($_POST['mNameToDelete']) && isset($_GET['u']))
+{
+    echo ' update works';
 }
 ?>

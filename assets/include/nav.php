@@ -1,7 +1,7 @@
         <nav class="navbar navbar-default" role="navigation">
     	  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
+		    <div class="navbar-header navbar-toggle">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
@@ -16,7 +16,6 @@
 		      <ul class="nav navbar-nav">
 		        <li><a href=" <?php echo siteroot() . 'index.php'; ?>">Home</a></li>
 		        <li><a href="<?php echo siteroot() . 'recipe/displayallrecipes.php'; ?>">Recipes</a></li>
-                  <li><a href="#">Subscribe</a></li>
 		        <!---->
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
@@ -45,9 +44,9 @@
 						<a href="#TODO">Forgot Password.</a>
 						<br><a href="'.includeFile("register.php").'">Register a new account.</a>
 					  </form>';
-					  
-					  
-					  
+
+
+
 				  }
 				  else
 				  {
@@ -65,11 +64,11 @@
 							echo '<li><a href="'.siteroot().'assets/admin/admin.php">Admin</a></li>';
 						}
 				  }
-				  
-					
+
+
 				  ?>
-				</li>		        
+				</li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
-		</nav>	
+		</nav>
