@@ -5,7 +5,7 @@
  * Date: 3/30/2018
  * Time: 2:54 PM
  */
-
+$pageid = 'admin';
 include_once($_SERVER['DOCUMENT_ROOT'] . '/dwda1/assets/include/core.php');
 
 $db = new db();
@@ -24,7 +24,7 @@ $row = mysqli_fetch_assoc($result);
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Edit <?php echo $row['meal_name']; ?></h4>
+                <h4 class="modal-title text-center">Edit <?php echo $row['meal_name']; ?></h4>
             </div>
             <div class="modal-body">
                 <form method="post" action="processmeals.php?u=update" class="">

@@ -50,8 +50,16 @@ $result = db::query("SELECT * FROM meals LIMIT $offset, $maxDisplay");
 //----------End pagination part 1-------
 
 ?>
+
 <div class="container ">
+
     <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4 center-block">
+                <a class="btn btn-primary pull-left" data-toggle="modal" href="#myModal" id="addrecipe">Add new recipe</a>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
 <?php
 
 while($row = mysqli_fetch_assoc($result))
@@ -61,7 +69,7 @@ while($row = mysqli_fetch_assoc($result))
         <div class="well padding50" style="margin-left: 10px;">
 
             <div class="col-md-2 btn-group-vertical" style="">
-                <a class="btn btn-primary pull-left recipeModal" data-toggle="modal" href="#myModal" id="modellink<?php echo $row['meal_id']; ?>" name="<?php echo $row['meal_id']; ?>">Edit Recipe</a>
+                <a class="btn btn-primary pull-left recipeModal" data-toggle="modal" href="#myModal" id="modallink<?php echo $row['meal_id']; ?>" name="<?php echo $row['meal_id']; ?>">Edit Recipe</a>
             </div>
             <div class="col-md-6 btn-group-vertical"><label style="padding-top: 5px;">Meal Name: <?php echo $row['meal_name']; ?></label></div>
         </div>
@@ -122,7 +130,17 @@ if ($currentPage != $totalPages) {
         $('body').on('click', '.btn' , function (event) {
             event.stopPropagation();
             var id = $('#'+event.target.id).attr("name");
-            var url = "recipebox.php?meal_id=" + id;
+            var url;
+            var $test = event.target.id.substring(0,9);
+            if($test === "modallink")
+            {
+                url = "recipebox.php?meal_id=" + id;
+            }
+            else
+            {
+                url = "addrecipebox.php";
+            }
+
             $('.modal-container').load(url, function (result) {
                 $('#myModal').modal({show: true});
             });

@@ -22,7 +22,8 @@ adminCheck($_SESSION['login_user'])?>
                 <li><a href="admin.php">Admin Dashboard</a> </li>
                 <li><a href="editcarousel.php">Edit Carousel</a></li>
                 <li><a href="adduser.php">Add User</a></li>
-                <li><a href="editweeklymeals.php">Edit Weekly Meals</a></li>
+                <li><a href="editweeklymeals.php">Edit Weekly Recipes</a></li>
+                <li><a href="editmealsitems.php">Recipes</a></li>
                 <!---->
             </ul>
             <ul class="nav navbar-nav navbar-right">
