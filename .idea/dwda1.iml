@@ -6,15 +6,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP" type="php">
-        <CLASSES>
-          <root url="file://C:/ProgramData/Microsoft/Windows/Start Menu/Programs/JetBrains" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://C:/ProgramData/Microsoft/Windows/Start Menu/Programs/JetBrains" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>

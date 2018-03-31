@@ -19,6 +19,10 @@
 		        <!---->
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
+                  <form action="<?php echo siteroot() . 'search.php'; ?>" method="POST">
+                      <input type="text" name="query" />
+                      <input type="submit" value="Search" />
+                  </form>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="loginname">notext</span><b id="caret" class="caret"></b></a>
 				  <?php

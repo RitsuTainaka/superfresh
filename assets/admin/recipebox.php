@@ -59,7 +59,9 @@ $row = mysqli_fetch_assoc($result);
                     <div class="entry input-group col-md-10 col-md-offset-1">
                         <label>Meal Serves</label>
                         <input class="form-control" name="newMealServes" type="text" placeholder="How many people the meal serves, e.g. 3" value="<?php echo $row['meal_serves']; ?>">
-                    </div><br>
+                    </div>
+                    <input type="hidden" name="meal_id" value="<?php echo $getID; ?>">
+                    <br>
                     <div class="entry input-group col-md-10 col-md-offset-1">
                         <label>Vegetarian meal?</label>&nbsp;
                         <select name="newIsVeg" title="vegetarian">
