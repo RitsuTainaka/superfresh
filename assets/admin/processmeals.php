@@ -90,7 +90,6 @@ else if (!isset($_POST['mNameToDelete']) && isset($_GET['u']))
 
     $sql = "UPDATE meals SET meal_name = '$newMealName', veg = '$newIsVeg', meal_image = '$newMealImage', meal_type = '$newMealType', meal_time = '$newMealTime', short_description = '$newMealShortDescription', meal_ingredients = '$serialisedIngredient', meal_method = '$serialisedMethod', meal_cook_time = '$newCookTime', meal_serves = '$newMealServes', meal_prep_time = '$newPrepTime' WHERE meal_id = '$meal_id'";
 
-    echo $sql;
     $result = db::query($sql);
 
     if($result)

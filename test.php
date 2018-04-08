@@ -19,4 +19,11 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/dwda1/assets/include/core.php');
 
 //echo $time;
 
+
+$test = db::test();
+
+echo $test;
+
 echo date('o-m-d');
+
+?>

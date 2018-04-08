@@ -5,7 +5,7 @@
  * Date: 3/16/2018
  * Time: 9:59 AM
  */
-include_once ($_SERVER['DOCUMENT_ROOT'] . '/dwda1/assets/config/functions.php');
+//include_once ($_SERVER['DOCUMENT_ROOT'] . '/dwda1/assets/config/functions.php');
 include_once($_SERVER['DOCUMENT_ROOT'] . '/dwda1/assets/config/config.php');
 
 class db
