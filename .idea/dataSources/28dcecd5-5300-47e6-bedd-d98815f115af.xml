@@ -856,42 +856,42 @@
     </table>
     <column id="219" parent="215" name="id">
       <Position>1</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="220" parent="215" name="carousel_name">
       <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
       <Collation>utf8_bin</Collation>
     </column>
     <column id="221" parent="215" name="carousel_image_link">
       <Position>3</Position>
-      <DataType>varchar(256)|0</DataType>
+      <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
       <Collation>utf8_bin</Collation>
     </column>
     <column id="222" parent="215" name="carousel_body">
       <Position>4</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
       <Collation>utf8_bin</Collation>
     </column>
     <column id="223" parent="215" name="carousel_url">
       <Position>5</Position>
-      <DataType>varchar(256)|0</DataType>
+      <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
       <Collation>utf8_bin</Collation>
     </column>
     <column id="224" parent="215" name="carousel_is_enabled">
       <Position>6</Position>
-      <DataType>tinyint(1)|0</DataType>
+      <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -910,72 +910,72 @@
     </key>
     <column id="228" parent="216" name="meal_id">
       <Position>1</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="229" parent="216" name="meal_name">
       <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="230" parent="216" name="veg">
       <Position>3</Position>
-      <DataType>tinyint(1)|0</DataType>
+      <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="231" parent="216" name="meal_image">
       <Position>4</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="232" parent="216" name="meal_type">
       <Position>5</Position>
-      <DataType>varchar(100)|0</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="233" parent="216" name="meal_time">
       <Position>6</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="234" parent="216" name="short_description">
       <Position>7</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="235" parent="216" name="meal_ingredients">
       <Position>8</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="236" parent="216" name="meal_method">
       <Position>9</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="237" parent="216" name="meal_cook_time">
       <Position>10</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="238" parent="216" name="meal_serves">
       <Position>11</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="239" parent="216" name="meal_prep_time">
       <Position>12</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="240" parent="216" name="date_published">
       <Position>13</Position>
-      <DataType>date|0</DataType>
+      <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="241" parent="216" name="meal_name">
@@ -993,37 +993,37 @@
     </key>
     <column id="244" parent="217" name="user_id">
       <Position>1</Position>
-      <DataType>int(50)|0</DataType>
+      <DataType>int(50)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="245" parent="217" name="username">
       <Position>2</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="246" parent="217" name="email">
       <Position>3</Position>
-      <DataType>varchar(75)|0</DataType>
+      <DataType>varchar(75)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="247" parent="217" name="password">
       <Position>4</Position>
-      <DataType>varchar(256)|0</DataType>
+      <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="248" parent="217" name="sessionid">
       <Position>5</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="249" parent="217" name="accessLevel">
       <Position>6</Position>
-      <DataType>tinyint(1)|0</DataType>
+      <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1053,26 +1053,26 @@
     </key>
     <column id="256" parent="218" name="wk_id">
       <Position>1</Position>
-      <DataType>int(20)|0</DataType>
+      <DataType>int(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="257" parent="218" name="weekly_meal_name">
       <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="258" parent="218" name="meal_id">
       <Position>3</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="259" parent="218" name="currentWeek">
       <Position>4</Position>
-      <DataType>tinyint(1)|0</DataType>
+      <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
