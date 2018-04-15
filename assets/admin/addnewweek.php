@@ -50,7 +50,7 @@ while ($row = mysqli_fetch_assoc($resultmeals))
                         </div>
                         <div class="row text-center">
                             <label>Current Week</label>
-                            <input type="checkbox" name="iscurrent" value="1" <?php ($row2['currentWeek'])? "checked":"" ?>><br>
+                            <input type="checkbox" name="iscurrent" value="1" <?php echo ($row2['currentWeek'])? "checked":"" ?>><br>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
