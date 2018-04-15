@@ -33,19 +33,14 @@ while($row = mysqli_fetch_assoc($result))
                 <div class="col-md-12">
 
 <?php
-xdebug_var_dump($result);
-if (!$result)
-{
-    echo "No Weekly recipe's set, please setup in admin area.";
-   // exit();
-}
+
 foreach ($meals as $x => $value)
 {
     $meal_id = $value;
     $result = db::query("SELECT * FROM meals WHERE meal_id = '$meal_id'");
 
     $row = mysqli_fetch_assoc($result);
-    xdebug_var_dump($rowCount);
+//    xdebug_var_dump($rowCount);
                     if ($rowCount == 2 || $firstRow) {
                         echo "<div class=\"row\">";
                         $firstRow = 0;
