@@ -23,6 +23,8 @@ while($row = mysqli_fetch_assoc($result))
 {
     $meals = unserialize($row['meal_id']);
 }
+
+
 ?>
 
     <div class="py-5">
@@ -31,6 +33,12 @@ while($row = mysqli_fetch_assoc($result))
                 <div class="col-md-12">
 
 <?php
+xdebug_var_dump($result);
+if (!$result)
+{
+    echo "No Weekly recipe's set, please setup in admin area.";
+   // exit();
+}
 foreach ($meals as $x => $value)
 {
     $meal_id = $value;
@@ -68,7 +76,4 @@ foreach ($meals as $x => $value)
             </div>
         </div>
     </div>
-
-<?php
-
 
