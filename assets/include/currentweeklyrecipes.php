@@ -50,7 +50,7 @@ while($row = mysqli_fetch_assoc($result))
                         <div class="col-md-4">
                             <h4 class="text-center"><?php echo $dayOfWeek[$dayOfWeekCount]; ?></h4>
                             <img class="img-thumbnail img-responsive center-block imgsize" src="<?php echo $row['meal_image']; ?>">
-                            <h3 class="text-center"><a href="showrecipe.php?meal_id=<?php echo $row["meal_id"]; ?>"><?php echo $row["meal_name"]; ?></a>
+                            <h3 class="text-center"><a href="/dwda1/recipe/showrecipe.php?meal_id=<?php echo $row["meal_id"]; ?>"><?php echo $row["meal_name"]; ?></a>
                             </h3>
                             <p class="center-block text-center" style="width: 50%"><?php echo $row['short_description']; ?></p>
                         </div>
